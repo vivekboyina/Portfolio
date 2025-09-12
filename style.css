@@ -28,11 +28,13 @@ ul {
   background-color: #1f2937;
 }
 .navs {
+  top: 0;
   display: flex;
   flex-direction: row;
   background-color: #1f2937;
   position: sticky;
   width: 100%;
+  border-bottom: #60a5fa 1px solid;
 }
 .prof {
   width: 50%;
@@ -358,6 +360,9 @@ form{
 .med img{
   height: 40px;
   width: 40px;
+}
+.med a:hover{
+  transform: scale(1.2);
 }
 footer{
   background-color: #1F2937;
