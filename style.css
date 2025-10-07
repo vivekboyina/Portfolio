@@ -60,7 +60,7 @@ h1 {
   color: #f9fafb;
   display: inline-block;
   padding-left: 100%;
-  animation: vk 50s linear infinite;
+  animation: vk 10s linear infinite;
   white-space: nowrap;
   font-family: "Sansation", sans-serif;
 }
@@ -123,19 +123,15 @@ h1 {
 }
 .skset{
   display: grid;
-  grid-template-columns: 250px 250px 250px;
+  grid-template-columns: 300px 300px 300px;
   padding-left: 220px;
   row-gap: 20px;
-}
-.skbox{
-  height: 200px;
-  width: 200px;
-  background-color: #111827;
-  border-radius: 25%;
 }
 .skbox:hover{
   background-color: #374151;
   transform: translateY(-20px);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 .skbox h4{
   color: #f9fafb;
@@ -143,39 +139,46 @@ h1 {
   font-family: "Roboto", sans-serif;
   padding-top: 10px;
 }
+.skbox{
+  height: 100px;
+  width: 100px;
+  background-color: #111827;
+  border-radius: 25%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 .b1 img{
-  height: 140px;
-  width: 140px;
+  height: 50px;
+  width: 50px;
   padding-left: 30px;
   padding-top: 5px;
 }
 .b2 img{
-  height: 150px;
-  width: 150px;
+  height: 50px;
+  width: 50px;
   padding-left: 25px;
   padding-top: 5px;
 }
 .b3 img{
-  height: 150px;
-  width: 150px;
+  height: 50px;
+  width: 50px;
   padding-left: 25px;
   padding-top: 5px;
 }
 .b4 img{
-  height: 150px;
-  width: 150px;
+  height: 50px;
+  width: 50px;
   padding-left: 25px;
   padding-top: 10px;
 }
 .b5 img{
-  height: 140px;
-  width: 140px;
-  padding-left: 30px;
-  padding-top: 10px;
+  height: 50px;
+  width: 50px;
+  padding-left: 25px;
+  padding-top: 0px;
 }
 .b6 img{
-  height: 150px;
-  width: 150px;
+  height: 50px;
+  width: 50px;
   padding-left: 25px;
   padding-top: 10px;
 }
@@ -217,7 +220,6 @@ h1 {
   height: 160px;
   margin-left: 70px;
   margin-top: 20px;
-  background-color: #374151;
   border-radius: 25%;
 }
 .p1 p{
@@ -365,11 +367,11 @@ form{
   transform: scale(1.2);
 }
 footer{
-  background-color: #1F2937;
-  height: 10vh;
+  background-color: black;
+  height: 70vh;
   margin-top: 30px;
   color: #D1D5DB;
   width: 100%;
-  align-content: center;
+  padding-top: 40px;
   text-align: center;
 }
