@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Libertinus+Mono&family=Manufacturing+Consent&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 body{
-  background-color: #111827;
+  background-color: #0b1020;
   align-content: center;
   align-items: center;
   justify-items: center;
@@ -71,13 +72,22 @@ h1 {
   margin-left: 70px;
   display: flex;
   border-radius: 10%;
+
 }
-.left{
+.left {
   color: #f9fafb;
   width: 40vw;
-  height: 80vh; 
-  align-content: center;
-  flex: 1;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 .right{
   width: 40vw;
@@ -98,6 +108,18 @@ h1 {
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
+.bta a{
+  text-decoration: none;
+  background-color: #374151;
+  color: #f9fafb;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-family: "Funnel Sans", sans-serif;
+}
+.bta a:hover{
+  color: #60a5fa;
+}
 @keyframes vk {
   0% {
     transform: translateX(-100%);
@@ -107,7 +129,7 @@ h1 {
   }
 }
 .skills{
-  background-color:  #1F2937;
+  background-color:  rgba(255, 255, 255, 0.08);
   height: 90vh;
   width: 80vw;
   margin-left: 70px;
@@ -149,7 +171,7 @@ h1 {
 .b1 img{
   height: 50px;
   width: 50px;
-  padding-left: 30px;
+  padding-left: 24px;
   padding-top: 5px;
 }
 .b2 img{
@@ -179,8 +201,8 @@ h1 {
 .b6 img{
   height: 50px;
   width: 50px;
-  padding-left: 25px;
-  padding-top: 10px;
+  padding-left: 24px;
+  padding-top: 5px;
 }
 .projects{
   background-color:  #1F2937;
@@ -368,11 +390,10 @@ form{
 }
 footer{
   background-color: black;
-  height: 20vh;
+  height: 70vh;
   margin-top: 30px;
   color: #D1D5DB;
   width: 100%;
   padding-top: 40px;
   text-align: center;
 }
-
