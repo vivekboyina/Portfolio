@@ -129,7 +129,7 @@ h1 {
   }
 }
 .skills{
-  background-color:  rgba(255, 255, 255, 0.08);
+  background-color:  #1f2937;
   height: 90vh;
   width: 80vw;
   margin-left: 70px;
@@ -390,10 +390,11 @@ form{
 }
 footer{
   background-color: black;
-  height: 70vh;
+  height: 10vh;
   margin-top: 30px;
   color: #D1D5DB;
   width: 100%;
   padding-top: 40px;
   text-align: center;
 }
+
