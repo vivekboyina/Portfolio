@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek | Web developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/ios-glyphs/30/FFFFFF/user--v1.png">
+</head>
+<body class="min-h-screen flex flex-col" id="home">
+
+    <!-- HEADER / NAV -->
+    <header class="h-16 sm:h-20 bg-[var(--bg-main)] w-full sticky top-0 z-50 shadow-md">
+        <nav class="flex flex-row items-center justify-between px-5 sm:px-10 h-full">
+            <!-- Logo -->
+            <div class="text-[var(--accent-secondary-hover)] text-2xl font-bold animate-bounce">
+                <a href="#home">VK</a>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <ul class="hidden md:flex gap-8 text-sm text-[var(--text-muted)] items-center">
+                <li><a class="hover:text-[var(--text-primary)] transition" href="#about">About</a></li>
+                <li><a class="hover:text-[var(--text-primary)] transition" href="#skills">Skills</a></li>
+                <li><a class="hover:text-[var(--text-primary)] transition" href="#projects">Projects</a></li>
+                <li><a class="hover:text-[var(--text-primary)] transition" href="#coding">Coding</a></li>
+                <li><a class="px-4 py-2 font-bold text-[var(--text-primary)] bg-[var(--accent-secondary-hover)] rounded-lg animate-pulse" href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger Button (mobile) -->
+            <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 cursor-pointer z-50" aria-label="Toggle menu">
+                <span class="block w-6 h-0.5 bg-[var(--text-primary)] transition-all duration-300" id="bar1"></span>
+                <span class="block w-6 h-0.5 bg-[var(--text-primary)] transition-all duration-300" id="bar2"></span>
+                <span class="block w-6 h-0.5 bg-[var(--text-primary)] transition-all duration-300" id="bar3"></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[var(--bg-main)] border-t border-[var(--border-color)] px-6 py-4">
+            <ul class="flex flex-col gap-4 text-sm text-[var(--text-muted)]">
+                <li><a class="hover:text-[var(--text-primary)] block py-1" href="#about" onclick="closeMenu()">About</a></li>
+                <li><a class="hover:text-[var(--text-primary)] block py-1" href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a class="hover:text-[var(--text-primary)] block py-1" href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a class="hover:text-[var(--text-primary)] block py-1" href="#coding" onclick="closeMenu()">Coding</a></li>
+                <li><a class="px-4 py-2 font-bold text-[var(--text-primary)] bg-[var(--accent-secondary-hover)] rounded-lg inline-block animate-pulse" href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="bg-[var(--bg-surface)]">
+
+        <!-- ABOUT / HERO SECTION -->
+        <section id="about" class="relative overflow-hidden py-16 px-4">
+            <!-- Decorative blobs -->
+            <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-60 h-60 bg-purple-600/20 rounded-full blur-3xl pointer-events-none" style="animation-delay:-3s;"></div>
+
+            <!-- Badges -->
+            <div class="flex flex-wrap justify-center gap-3 mb-8">
+                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-gray-400">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    Available for new projects
+                </span>
+                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-gray-400">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    Available for internships
+                </span>
+            </div>
+
+            <!-- Hero text -->
+            <div class="flex flex-col items-center gap-5 text-center relative z-10">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl max-w-[15ch] text-[var(--heading-muted)] font-bold leading-tight" style="font-family:var(--font-heading)">
+                    Aspiring <span class="text-[var(--accent-secondary-hover)]">Full Stack Developer</span>
+                </h1>
+                <p class="text-base sm:text-lg lg:text-xl max-w-[60ch] text-[var(--paragraph-text)] leading-relaxed" style="font-family:var(--font-body)">
+                    I am a Full Stack Developer focused on building scalable web applications with intelligent AI integration. I combine strong JavaScript fundamentals, system design thinking, and backend optimization to create high-performance, real-world solutions.
+                </p>
+                <div class="flex justify-center gap-4 pt-2">
+                    <a class="cursor-pointer bg-white/10 border-[var(--btn-border)] rounded-lg px-6 py-3 font-bold text-[var(--text-primary)] animate-pulse" href="#" download>Download Resume</a>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg px-6 py-3 font-bold text-[var(--text-primary)] animate-pulse" href="#projects">View My Work</a>
+                    <a class="cursor-pointer bg-white/10 rounded-lg px-6 py-3 font-bold text-[var(--text-primary)] animate-pulse" href="#contact">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="py-20 px-4">
+            <div class="text-center mb-10">
+                <h1 class="text-[var(--text-primary)] font-bold text-4xl sm:text-5xl" style="font-family:var(--font-heading)">Skills</h1>
+                <p class="text-[var(--accent-secondary)] text-sm mt-1" style="font-family:var(--font-body)">What I have</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+                <!-- Frontend -->
+                <div class="min-h-[256px] bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition group p-4">
+                    <img width="50" height="50" src="https://img.icons8.com/external-others-pike-picture/50/external-css-front-end-development-others-pike-picture.png" alt="frontend"/>
+                    <h2 class="font-[var(--font-heading)] text-white/40 text-4xl mt-1">Frontend</h2>
+                    <div class="grid grid-cols-2 gap-3 mt-3">
+                        <div class="flex items-center gap-1 text-orange-400 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/pulsar-gradient/48/html-5.png" alt="html"/> HTML</div>
+                        <div class="flex items-center gap-1 text-blue-400 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/pulsar-gradient/48/css3.png" alt="css"/> CSS</div>
+                        <div class="flex items-center gap-1 text-blue-200 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/fluency/48/tailwind_css.png" alt="tailwind"/> Tailwind</div>
+                        <div class="flex items-center gap-1 text-blue-300 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="react"/> React</div>
+                        <div class="flex items-center gap-1 text-yellow-400 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/pulsar-gradient/48/javascript.png" alt="js"/> JavaScript</div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="min-h-[256px] bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] group p-4 hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)]">
+                        <img width="50" height="50" src="https://img.icons8.com/pulsar-color/48/backend-development.png" alt="backend"/>
+                        <h2 class="font-[var(--font-heading)] text-white/40 text-4xl mt-1">Backend</h2>
+                        <div class="grid grid-cols-2 gap-3 mt-3">
+                            <div class="flex items-center gap-1 text-green-300 text-base"><img width="25" height="25" src="https://img.icons8.com/fluency/48/node-js.png" alt="node"/> Node.js</div>
+                            <div class="flex items-center gap-1 text-white/60 text-base"><img width="25" height="25" src="https://img.icons8.com/office/30/express-js.png" alt="express"/> Express.js</div>
+                            <div class="flex items-center gap-1 text-white/60 text-base"><img width="25" height="25" src="https://img.icons8.com/fluency/48/api-settings.png" alt="api"/> Rest API</div>
+                            <div class="flex items-center gap-1 text-yellow-400 text-base"><img width="25" height="25" src="https://img.icons8.com/color/48/authentication.png" alt="auth"/> Auth</div>
+                        </div>
+                </div>
+
+                <!-- Database -->
+                <div class="min-h-[256px] bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] group p-4 hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)]">
+                    <img width="50" height="50" src="https://img.icons8.com/fluency/48/database--v1.png" alt="database"/>
+                    <h2 class="font-[var(--font-heading)] text-white/40 text-4xl mt-1">Database</h2>
+                    <div class="grid grid-cols-2 gap-3 mt-3">
+                        <div class="flex items-center gap-1 text-orange-400 text-base"><img width="25" height="25" src="https://img.icons8.com/color/48/my-sql.png" alt="mysql"/> MySQL</div>
+                        <div class="flex items-center gap-1 text-green-500 text-base"><img width="25" height="25" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="mongodb"/> MongoDB</div>
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div class="min-h-[256px] bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] group p-4 hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)]">
+                    <img width="50" height="50" src="https://img.icons8.com/pulsar-color/48/cloud-development.png" alt="devops"/>
+                    <h2 class="font-[var(--font-heading)] text-white/40 text-4xl mt-1">DevOps & Cloud</h2>
+                    <div class="grid grid-cols-2 gap-3 mt-3">
+                        <div class="flex items-center gap-1 text-white/80 text-base"><img width="25" height="25" src="https://img.icons8.com/windows/32/FFFFFF/amazon-web-services.png" alt="aws"/> AWS</div>
+                        <div class="flex items-center gap-1 text-blue-400 text-base"><img width="25" height="25" src="https://img.icons8.com/fluency/48/docker.png" alt="docker"/> Docker</div>
+                        <div class="flex items-center gap-1 text-green-400 text-base"><img width="25" height="25" src="https://img.icons8.com/fluency-systems-filled/48/40C057/triangle.png" alt="vercel"/> Vercel</div>
+                        <div class="flex items-center gap-1 text-yellow-400 text-base"><img width="25" height="25" src="https://img.icons8.com/external-those-icons-flat-those-icons/24/external-Linux-logos-and-brands-those-icons-flat-those-icons.png" alt="linux"/> Linux CLI</div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="min-h-[256px] bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] group p-4 hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)]">
+                        <img width="50" height="50" src="https://img.icons8.com/fluency/48/maintenance--v1.png" alt="tools"/>
+                        <h2 class="font-[var(--font-heading)] text-white/40 text-4xl mt-1">Tools</h2>
+                        <div class="grid grid-cols-2 gap-3 mt-3">
+                            <div class="flex items-center gap-1 text-white text-base"><img width="25" height="25" src="https://img.icons8.com/glyph-neue/64/github.png" alt="github"/> Github</div>
+                            <div class="flex items-center gap-1 text-white text-base"><img width="25" height="25" src="https://img.icons8.com/windows/32/postman.png" alt="postman"/> Postman</div>
+                            <div class="flex items-center gap-1 text-blue-400 text-base"><img width="25" height="25" src="https://img.icons8.com/color/48/visual-studio-code-2019.png" alt="vscode"/> VS Code</div>
+                        </div>
+                </div>
+
+                <!-- Other -->
+                <div class="min-h-[256px] bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition group p-4">
+                    <img width="50" height="50" src="https://img.icons8.com/color/48/more.png" alt="other"/>
+                    <h2 class="font-[var(--font-heading)] text-white/40 text-4xl mt-1">Other</h2>
+                    <div class="grid grid-cols-2 gap-3 mt-3">
+                        <div class="flex items-center gap-1 text-orange-300 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="java"/> Java</div>
+                        <div class="flex items-center gap-1 text-blue-400 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/fluency/48/c-plus-plus-logo.png" alt="cpp"/> C++</div>
+                        <div class="flex items-center gap-1 text-yellow-200 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/fluency/48/python.png" alt="python"/> Python</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="py-20 px-4">
+            <div class="text-center mb-10">
+                <h1 class="text-[var(--text-primary)] font-bold text-4xl sm:text-5xl" style="font-family:var(--font-heading)">Projects</h1>
+                <p class="text-[var(--accent-secondary)] text-sm mt-1" style="font-family:var(--font-body)">What I did</p>
+            </div>
+            <div class="flex flex-col gap-6 max-w-4xl mx-auto">
+
+                <!-- Project 1 -->
+                <div class="flex flex-col sm:flex-row bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] hover:scale-[1.02] hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition overflow-hidden">
+                    <div class="flex items-center justify-center bg-[var(--bg-elevated)] p-6 sm:w-48 shrink-0">
+                        <img width="120" height="120" src="https://img.icons8.com/3d-fluency/94/resume-website.png" alt="portfolio" class="animate-pulse"/>
+                    </div>
+                    <div class="p-5 flex flex-col gap-3">
+                        <h1 class="text-2xl sm:text-3xl font-semibold text-[var(--heading-primary)]" style="font-family:var(--font-heading)">Personal Portfolio Website</h1>
+                        <div class="text-sm flex flex-col gap-1">
+                            <p><span class="text-[var(--heading-secondary)] font-semibold">Frontend:</span> <span class="text-[var(--code-text)]">HTML, CSS, Tailwind CSS, JS</span></p>
+                            <p><span class="text-[var(--heading-secondary)] font-semibold">Form Handling:</span> <span class="text-[var(--code-text)]">Formspree</span></p>
+                            <p class="text-[var(--code-text)] max-w-[50ch]">A responsive full stack developer portfolio built with HTML and Tailwind CSS, highlighting my projects, skills, and clean UI design, with contact functionality powered by Formspree.</p>
+                        </div>
+                        <div class="flex gap-3 flex-wrap">
+                            <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg px-5 py-2 font-bold text-[var(--text-primary)] animate-pulse text-sm" href="#home" target="_blank">View</a>
+                            <a class="cursor-pointer bg-white/10 rounded-lg px-5 py-2 font-bold text-[var(--text-primary)] animate-pulse text-sm" href="https://github.com/vivekboyina/Portfolio" target="_blank">Github Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="flex flex-col sm:flex-row bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] hover:scale-[1.02] hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition overflow-hidden">
+                    <div class="flex items-center justify-center bg-[var(--bg-elevated)] p-6 sm:w-48 shrink-0">
+                        <img width="120" height="120" src="https://img.icons8.com/external-filled-outline-design-circle/64/external-Digital-Clock-kitchen-and-home-filled-outline-design-circle.png" alt="digital-clock" class="animate-pulse"/>
+                    </div>
+                    <div class="p-5 flex flex-col gap-3">
+                        <h1 class="text-2xl sm:text-3xl font-semibold text-[var(--heading-primary)]" style="font-family:var(--font-heading)">Digital Clock</h1>
+                        <div class="text-sm flex flex-col gap-1">
+                            <p><span class="text-[var(--heading-secondary)] font-semibold">Frontend:</span> <span class="text-[var(--code-text)]">HTML, CSS, JS</span></p>
+                            <p class="text-[var(--code-text)]">No backend used in this project</p>
+                            <p class="text-[var(--code-text)] max-w-[50ch]">A responsive digital clock application that displays real-time hours, minutes, and seconds using JavaScript's Date API and setInterval, showcasing dynamic UI updates and core frontend logic.</p>
+                        </div>
+                        <div class="flex gap-3 flex-wrap">
+                            <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg px-5 py-2 font-bold text-[var(--text-primary)] animate-pulse text-sm" href="https://vivekboyina.github.io/Digital-Clock/" target="_blank">View</a>
+                            <a class="cursor-pointer bg-white/10 rounded-lg px-5 py-2 font-bold text-[var(--text-primary)] animate-pulse text-sm" href="https://github.com/vivekboyina/Digital-Clock" target="_blank">Github Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CODING SECTION -->
+        <section id="coding" class="py-20 px-4">
+            <div class="text-center mb-10">
+                <h1 class="text-[var(--text-primary)] font-bold text-4xl sm:text-5xl" style="font-family:var(--font-heading)">Coding</h1>
+                <p class="text-[var(--accent-secondary)] text-sm mt-1" style="font-family:var(--font-body)">What I do</p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 max-w-4xl mx-auto justify-items-center">
+
+                <!-- LeetCode -->
+                <div class="group relative bg-white/10 h-40 w-40 rounded-3xl cursor-pointer border-2 border-[var(--accent-secondary-hover)] hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition">
+                    <div class="flex items-center justify-center h-full animate-bounce">
+                        <img width="80" height="80" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-color-tal-revivo.png" alt="leetcode"/>
+                    </div>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-black/90 rounded-3xl flex flex-col items-center justify-center gap-3 transition-opacity">
+                        <h2 class="text-[var(--text-secondary)] font-bold text-sm">Leetcode</h2>
+                        <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg h-8 w-16 text-center text-[var(--paragraph-text)] content-center text-sm" href="https://leetcode.com/u/vivekboyina/" target="_blank">View</a>
+                    </div>
+                </div>
+
+                <!-- GeeksForGeeks -->
+                <div class="group relative bg-white/10 h-40 w-40 rounded-3xl cursor-pointer border-2 border-[var(--accent-secondary-hover)] hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition">
+                    <div class="flex items-center justify-center h-full animate-bounce">
+                        <img width="80" height="80" src="https://img.icons8.com/color/96/GeeksforGeeks.png" alt="geeksforgeeks"/>
+                    </div>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-black/90 rounded-3xl flex flex-col items-center justify-center gap-3 transition-opacity">
+                        <h2 class="text-[var(--text-secondary)] font-bold text-sm">GeeksForGeeks</h2>
+                        <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg h-8 w-16 text-center text-[var(--paragraph-text)] content-center text-sm" href="https://www.geeksforgeeks.org/profile/vivekboyina" target="_blank">View</a>
+                    </div>
+                </div>
+
+                <!-- CodeChef -->
+                <div class="group relative bg-white/10 h-40 w-40 rounded-3xl cursor-pointer border-2 border-[var(--accent-secondary-hover)] hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition">
+                    <div class="flex items-center justify-center h-full animate-bounce">
+                        <img width="80" height="80" src="https://img.icons8.com/fluency/96/codechef.png" alt="codechef"/>
+                    </div>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-black/90 rounded-3xl flex flex-col items-center justify-center gap-3 transition-opacity">
+                        <h2 class="text-[var(--text-secondary)] font-bold text-sm">CodeChef</h2>
+                        <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg h-8 w-16 text-center text-[var(--paragraph-text)] content-center text-sm" href="https://www.codechef.com/users/vivek_7_7" target="_blank">View</a>
+                    </div>
+                </div>
+
+                <!-- CodeForces -->
+                <div class="group relative bg-white/10 h-40 w-40 rounded-3xl cursor-pointer border-2 border-[var(--accent-secondary-hover)] hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition">
+                    <div class="flex items-center justify-center h-full animate-bounce">
+                        <img width="80" height="80" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-codeforces-programming-competitions-and-contests-programming-community-logo-color-tal-revivo.png" alt="codeforces"/>
+                    </div>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-black/90 rounded-3xl flex flex-col items-center justify-center gap-3 transition-opacity">
+                        <h2 class="text-[var(--text-secondary)] font-bold text-sm">CodeForces</h2>
+                        <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg h-8 w-16 text-center text-[var(--paragraph-text)] content-center text-sm" href="https://codeforces.com/profile/vivekboyina" target="_blank">View</a>
+                    </div>
+                </div>
+
+                <!-- HackerRank -->
+                <div class="group relative bg-white/10 h-40 w-40 rounded-3xl cursor-pointer border-2 border-[var(--accent-secondary-hover)] hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition">
+                    <div class="flex items-center justify-center h-full animate-bounce">
+                        <img width="80" height="80" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-logo-color-tal-revivo.png" alt="hackerrank"/>
+                    </div>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-black/90 rounded-3xl flex flex-col items-center justify-center gap-3 transition-opacity">
+                        <h2 class="text-[var(--text-secondary)] font-bold text-sm">HackerRank</h2>
+                        <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg h-8 w-16 text-center text-[var(--paragraph-text)] content-center text-sm" href="https://www.hackerrank.com/profile/vivekboyina77" target="_blank">View</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-20 px-4">
+            <div class="text-center mb-10">
+                <h1 class="text-[var(--text-primary)] font-bold text-4xl sm:text-5xl" style="font-family:var(--font-heading)">Contact</h1>
+                <p class="text-[var(--accent-secondary)] text-sm mt-1" style="font-family:var(--font-body)">Connect with me</p>
+            </div>
+            <div class="max-w-lg mx-auto bg-white/10 border-2 border-[var(--accent-secondary-hover)] rounded-3xl p-6 sm:p-8">
+                <form id="contact-form" class="flex flex-col gap-5">
+                    <label class="text-[var(--heading-muted)] text-lg font-semibold flex flex-col gap-2">
+                        Your Name
+                        <input name="name" type="text" class="bg-[var(--input-bg)] border border-[var(--input-border)] h-10 rounded-md text-[var(--input-text)] px-3 w-full text-sm" placeholder="Enter your name" required>
+                    </label>
+                    <label class="text-[var(--heading-muted)] text-lg font-semibold flex flex-col gap-2">
+                        Your Email
+                        <input type="email" name="email" class="bg-[var(--input-bg)] border border-[var(--input-border)] h-10 rounded-md text-[var(--input-text)] px-3 w-full text-sm" placeholder="Enter your email" required>
+                    </label>
+                    <label class="text-[var(--heading-muted)] text-lg font-semibold flex flex-col gap-2">
+                        Your Message
+                        <textarea name="message" rows="4" class="bg-[var(--input-bg)] border border-[var(--input-border)] rounded-md text-[var(--input-text)] px-3 py-2 w-full text-sm resize-none" placeholder="Enter your message" required></textarea>
+                    </label>
+                    <button type="submit" class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg py-2 px-6 self-center font-bold text-[var(--paragraph-text)] animate-pulse w-full sm:w-auto">Send</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-10 px-4">
+        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 justify-between text-[var(--text-disabled)]">
+            <div>
+                <h2 class="text-lg font-semibold mb-2">Social Media</h2>
+                <div class="flex gap-3 mt-2">
+                    <a href="https://www.linkedin.com/in/vivek-boyina-89148a306/?originalSubdomain=in"><img width="30" height="30" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin" class="hover:scale-125 hover:animate-pulse transition"/></a>
+                    <a href="https://x.com/VivekBoyina07"><img width="28" height="28" src="https://img.icons8.com/ios-filled/50/FFFFFF/twitterx--v2.png" alt="twitter" class="hover:scale-125 hover:animate-pulse transition"/></a>
+                    <a href="https://github.com/vivekboyina"><img width="28" height="28" src="https://img.icons8.com/material-sharp/24/FFFFFF/github.png" alt="github" class="hover:scale-125 hover:animate-pulse transition"/></a>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-lg font-semibold mb-2">Contact</h2>
+                <div class="flex flex-col gap-1 text-sm">
+                    <div class="flex gap-1 items-center">
+                        <span>Call:</span>
+                        <span class="hover:text-[var(--accent-secondary)] transition">+91 8106464623</span>
+                    </div>
+                    <div class="flex gap-1 items-center">
+                        <span>Mail:</span>
+                        <a href="mailto:vivekboyina77@gmail.com" class="hover:text-[var(--accent-secondary)] transition">vivekboyina77@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-[var(--text-disabled)] mt-8 text-sm">
+            &copy; Copyrights Reserved <a href="#" class="hover:text-[var(--accent-secondary)] transition">Vivek Boyina</a>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const bar1 = document.getElementById('bar1');
+        const bar2 = document.getElementById('bar2');
+        const bar3 = document.getElementById('bar3');
+        let menuOpen = false;
+
+        menuBtn.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+            mobileMenu.classList.toggle('hidden', !menuOpen);
+            // Animate hamburger to X
+            if (menuOpen) {
+                bar1.style.transform = 'translateY(8px) rotate(45deg)';
+                bar2.style.opacity = '0';
+                bar3.style.transform = 'translateY(-8px) rotate(-45deg)';
+            } else {
+                bar1.style.transform = '';
+                bar2.style.opacity = '';
+                bar3.style.transform = '';
+            }
+        });
+
+        function closeMenu() {
+            menuOpen = false;
+            mobileMenu.classList.add('hidden');
+            bar1.style.transform = '';
+            bar2.style.opacity = '';
+            bar3.style.transform = '';
+        }
+
+        // Contact form
+        const form = document.getElementById("contact-form");
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            fetch("https://formspree.io/f/xpqjybkp", {
+                method: "POST",
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(response => {
+                if (response.ok) {
+                    form.reset();
+                    alert("Message sent successfully!");
+                } else {
+                    alert("Oops! Something went wrong. Please try again.");
+                }
+            })
+            .catch(() => alert("Network error. Please try again."));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+:root {
+  /* ========== BACKGROUNDS ========== */
+  --bg-main: #0F172A;
+  --bg-surface: #111827;
+  --bg-card: #0B1220;
+  --bg-card-hover: #111A2E;
+  --bg-elevated: #1F2937;
+
+  /* ========== BASE TEXT COLORS ========== */
+  --text-primary: #E5E7EB;      /* main body text */
+  --text-secondary: #9CA3AF;    /* descriptions */
+  --text-muted: #6B7280;        /* captions / meta */
+  --text-inverse: #020617;      /* text on bright buttons */
+  --text-disabled: #4B5563;
+
+  /* ========== HEADINGS ========== */
+  --heading-primary: #F8FAFC;   /* h1, hero text */
+  --heading-secondary: #E2E8F0; /* h2, h3 */
+  --heading-muted: #CBD5E1;
+
+  /* ========== PARAGRAPHS ========== */
+  --paragraph-text: var(--text-primary);
+  --paragraph-muted: var(--text-secondary);
+
+  /* ========== LINKS ========== */
+  --link-color: #38BDF8;
+  --link-hover: #7DD3FC;
+  --link-visited: #818CF8;
+
+  /* ========== ACCENTS ========== */
+  --accent-primary: #38BDF8;
+  --accent-primary-hover: #0EA5E9;
+  --accent-secondary: #8B5CF6;
+  --accent-secondary-hover: #7C3AED;
+  --accent-success: #22C55E;
+  --accent-warning: #FBBF24;
+  --accent-danger: #EF4444;
+
+  /* ========== BUTTONS ========== */
+  --btn-bg: var(--accent-primary);
+  --btn-bg-hover: var(--accent-primary-hover);
+  --btn-text: var(--text-inverse);
+  --btn-border: transparent;
+
+  --btn-secondary-bg: transparent;
+  --btn-secondary-bg-hover: rgba(56, 189, 248, 0.1);
+  --btn-secondary-text: var(--accent-primary);
+  --btn-secondary-border: var(--accent-primary);
+
+  /* ========== FORMS & INPUT TEXT ========== */
+  --input-bg: #020617;
+  --input-border: #1E293B;
+  --input-border-focus: var(--accent-primary);
+  --input-text: var(--text-primary);
+  --input-placeholder: #64748B;
+  --label-text: var(--text-secondary);
+  --help-text: var(--text-muted);
+
+  /* ========== CARDS ========== */
+  --card-title: var(--heading-secondary);
+  --card-text: var(--text-secondary);
+  --card-meta: var(--text-muted);
+
+  /* ========== CODE & MONO TEXT ========== */
+  --code-bg: #020617;
+  --code-text: #A5F3FC;
+  --code-border: #1E293B;
+
+  /* ========== BORDERS & DIVIDERS ========== */
+  --border-color: #1E293B;
+  --divider-color: #020617;
+
+  /* ========== SHADOWS ========== */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.5);
+
+  /* ========== STATES ========== */
+  --focus-ring: 0 0 0 2px rgba(56, 189, 248, 0.5);
+  --hover-overlay: rgba(255, 255, 255, 0.03);
+  --active-overlay: rgba(255, 255, 255, 0.06);
+  --selection-bg: rgba(56, 189, 248, 0.25);
+  --selection-text: var(--text-primary);
+
+  /* ========== TRANSITIONS ========== */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+
+  /* Headings */
+  --font-heading: 'Space Grotesk', sans-serif;   /* Bold, modern, standout */
+
+  /* Body text */
+  --font-body: 'Inter', sans-serif;              /* Clean, highly readable */
+
+  /* Accent / code font */
+  --font-accent: 'JetBrains Mono', monospace;   /* Developer-style monospace */
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-secondary-hover) var(--bg-main);
+}
