@@ -102,4 +102,5 @@
 *{
     scrollbar-width: thin;
     scrollbar-color: var(--accent-secondary-hover) var(--bg-main);
+    cursor: url("https://img.icons8.com/ios-glyphs/30/7950F2/cheap-2.png"), auto;
 }
