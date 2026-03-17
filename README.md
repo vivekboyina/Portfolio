@@ -41,6 +41,6 @@ It focuses on **clean UI, responsiveness, and modern design using Tailwind CSS**
 To run this project locally:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/vivekboyina/Portfolio.git
+cd Portfolio
 open index.html
