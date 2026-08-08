@@ -1,397 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivek | Web developer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://img.icons8.com/ios-glyphs/30/FFFFFF/user--v1.png">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vivek | Software Engineer</title>
+<meta name="description" content="Computer Science undergraduate at Aditya University targeting SDE-1 roles. Java, backend engineering, DSA (700+ LeetCode problems) and full-stack development." />
+<meta property="og:title" content="Boyina Veera Venkata Vivek | Software Engineer" />
+<meta property="og:description" content="Java and backend-focused CS undergraduate building reliable software. 700+ LeetCode problems, Spring Boot REST APIs, full-stack projects." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="https://img.icons8.com/ios-glyphs/30/FFFFFF/user--v1.png">
+<link rel="stylesheet" href="style.css" />
 </head>
-<body class="min-h-screen flex flex-col" id="home">
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- HEADER / NAV -->
-    <header class="h-16 sm:h-20 bg-[var(--bg-main)] w-full sticky top-0 z-50 shadow-md">
-        <nav class="flex flex-row items-center justify-between px-5 sm:px-10 h-full">
-            <!-- Logo -->
-            <div class="text-[var(--accent-secondary-hover)] text-2xl font-bold animate-bounce">
-                <a href="#home">VK</a>
+<header class="nav-wrap">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="#top">
+      <span class="brand-dot pulse" aria-hidden="true"></span>
+      VK
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-burger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+      <span class="nav-sep" aria-hidden="true"></span>
+      <a class="nav-ext" href="https://github.com/vivekboyina" target="_blank">GitHub</a>
+      <a class="nav-ext" href="https://www.linkedin.com/in/boyina-veera-venkata-vivek/" target="_blank">LinkedIn</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <span id="top"></span>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Open to SDE-1 &amp; software engineering internships</p>
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Available for internships</p>
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Available for projects</p>
+        <h1 id="hero-title">Boyina Veera Venkata Vivek</h1>
+        <p class="hero-headline">Building reliable backend systems, one problem at a time.</p>
+        <p class="hero-desc">
+          Computer Science undergraduate at Aditya University working primarily in <strong>Java</strong>, with
+          strong fundamentals in <strong>Data Structures &amp; Algorithms</strong>, OOP, Operating Systems,
+          DBMS and Computer Networks. I build backend services and full-stack web applications, and I have
+          solved <strong>700+ problems on LeetCode</strong>.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          <a class="btn btn-primary" href="resume.pdf" download>Download Resume</a>
+        </div>
+        <div class="hero-links">
+          <a href="https://github.com/vivekboyina" target="_blank">GitHub<span aria-hidden="true"> ↗</span></a>
+          <a href="https://www.linkedin.com/in/boyina-veera-venkata-vivek/" target="_blank">LinkedIn<span aria-hidden="true"> ↗</span></a>
+          <a href="mailto:vivekboyina77@gmail.com">vivekboyina77@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="terminal reveal reveal-2" role="img" aria-label="Terminal panel summarising profile: name, focus areas Java, backend engineering, DSA, full-stack development, and status building and learning.">
+        <div class="term-bar">
+          <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span>
+          <span class="term-title">vivek@portfolio — zsh</span>
+        </div>
+        <pre class="term-body"><span class="c-prompt">$</span> <span class="c-cmd">whoami</span>
+Boyina Veera Venkata Vivek
+
+<span class="c-prompt">$</span> <span class="c-cmd">focus</span>
+<span class="c-out">›</span> Java &amp; Backend Engineering
+<span class="c-out">›</span> Data Structures &amp; Algorithms
+<span class="c-out">›</span> Full-Stack Development
+<span class="c-out">›</span> Core Computer Science
+
+<span class="c-prompt">$</span> <span class="c-cmd">stats --summary</span>
+leetcode_solved   <span class="c-num">700+</span>
+cgpa              <span class="c-num">8.64 / 10</span>
+atf_exam_2025     <span class="c-num">Top 8%</span>
+
+<span class="c-prompt">$</span> <span class="c-cmd">status</span>
+<span class="c-ok">●</span> Building &amp; learning<span class="caret" aria-hidden="true"></span></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section" aria-labelledby="about-title">
+    <div class="container">
+      <p class="section-tag">01 — About</p>
+      <h2 id="about-title" class="section-title">A serious engineer in the making</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I am a B.Tech Computer Science student at Aditya University, working towards an
+            <strong>SDE-1</strong> profile at product-based companies. My day-to-day work is centred on
+            <strong>Java</strong> — collections, OOP, exception handling, generics and multithreading — and on
+            translating that into backend services with Spring Boot and MySQL.
+          </p>
+          <p>
+            Problem solving is the backbone of how I learn. With <strong>600+ LeetCode problems</strong> across
+            arrays, linked lists, trees, graphs, sliding window and dynamic programming, I approach engineering
+            problems by reasoning about complexity, edge cases and data modelling before writing code.
+          </p>
+          <p>
+            Alongside backend work, I build and ship full-stack interfaces with HTML5, CSS3, Tailwind CSS and
+            React, and I care about clean code, the MVC pattern, REST API design and SOLID principles — the
+            practices that make software maintainable rather than merely functional.
+          </p>
+        </div>
+        <div class="stat-grid reveal reveal-2">
+          <div class="stat"><span class="stat-num">700+</span><span class="stat-label">LeetCode problems</span></div>
+          <div class="stat"><span class="stat-num">8.64</span><span class="stat-label">CGPA / 10</span></div>
+          <div class="stat"><span class="stat-num">Top 8%</span><span class="stat-label">ATF Scholarship Exam 2025</span></div>
+          <div class="stat"><span class="stat-num">5★</span><span class="stat-label">HackerRank C++</span></div>
+          <div class="stat"><span class="stat-num">5★</span><span class="stat-label">HackerRank SQL</span></div>
+          <div class="stat"><span class="stat-num">96.6%</span><span class="stat-label">Class XII (PCM)</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section" aria-labelledby="skills-title">
+    <div class="container">
+      <p class="section-tag">02 — Skills</p>
+      <h2 id="skills-title" class="section-title">Engineering skill map</h2>
+      <p class="section-sub">The stack I work in and the fundamentals underneath it.</p>
+
+      <div class="skill-grid">
+        <article class="skill-card reveal">
+          <h3>Programming Languages</h3>
+          <p class="skill-note">Java is my primary language; C++ for algorithms, JavaScript on the web.</p>
+          <ul class="pills">
+            <li class="pill pill-accent">Java</li>
+            <li class="pill">C++</li>
+            <li class="pill">JavaScript</li>
+          </ul>
+          <p class="skill-meta">Java: Collections · Multithreading · OOP · Exception Handling · Generics</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <h3>Web &amp; Database</h3>
+          <p class="skill-note">Building and styling interfaces, and persisting data behind them.</p>
+          <ul class="pills">
+            <li class="pill">HTML5</li>
+            <li class="pill">CSS3</li>
+            <li class="pill">Tailwind CSS</li>
+            <li class="pill">React</li>
+            <li class="pill">Springboot</li>
+            <li class="pill">MySQL</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal">
+          <h3>Core Computer Science</h3>
+          <p class="skill-note">The fundamentals interviews and real systems both depend on.</p>
+          <ul class="pills">
+            <li class="pill">Data Structures &amp; Algorithms</li>
+            <li class="pill">Object-Oriented Programming</li>
+            <li class="pill">Operating Systems</li>
+            <li class="pill">DBMS</li>
+            <li class="pill">Computer Networks</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal">
+          <h3>Developer Tools</h3>
+          <p class="skill-note">Everyday environment for writing, versioning and shipping code.</p>
+          <ul class="pills">
+            <li class="pill">Git</li>
+            <li class="pill">GitHub</li>
+            <li class="pill">IntelliJ IDEA</li>
+            <li class="pill">VS Code</li>
+            <li class="pill">Linux (CLI / Bash)</li>
+            <li class="pill">Vercel</li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal">
+          <h3>Engineering Concepts</h3>
+          <p class="skill-note">How I think about structuring and maintaining software.</p>
+          <ul class="pills">
+            <li class="pill">REST APIs</li>
+            <li class="pill">MVC Pattern</li>
+            <li class="pill">Clean Code</li>
+            <li class="pill">SOLID Principles</li>
+            <li class="pill">System Design (Basics)</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-projects" aria-labelledby="projects-title">
+    <div class="container">
+      <p class="section-tag">03 — Projects</p>
+      <h2 id="projects-title" class="section-title">Things I have engineered</h2>
+      <p class="section-sub">Backend services and web applications, with the decisions behind them.</p>
+
+      <div class="project-list">
+
+        <div class="project-row">
+          <article class="project reveal">
+            <span class="p-index" aria-hidden="true">01</span>
+            <div class="p-head">
+              <div>
+                <h3 class="p-title">GitHub Profile Finder</h3>
+                <p class="p-cat">Frontend Engineering</p>
+              </div>
             </div>
-
-            <!-- Desktop Nav Links -->
-            <ul class="hidden md:flex gap-8 text-sm text-[var(--text-muted)] items-center">
-                <li><a class="hover:text-[var(--text-primary)] hover:underline transition cursor-pointer" href="#about">About</a></li>
-                <li><a class="hover:text-[var(--text-primary)] hover:underline transition cursor-pointer" href="#skills">Skills</a></li>
-                <li><a class="hover:text-[var(--text-primary)] hover:underline transition cursor-pointer" href="#projects">Projects</a></li>
-                <li><a class="hover:text-[var(--text-primary)] hover:underline transition cursor-pointer" href="#coding">Coding</a></li>
-                <li><a class="px-4 py-2 font-bold text-[var(--text-primary)] bg-[var(--accent-secondary-hover)] rounded-lg hover:underline animate-pulse cursor-pointer" href="#contact">Contact</a></li>
+            <ul class="pills pills-sm">
+              <li class="pill">React</li><li class="pill">HTML</li><li class="pill">Tailwind CSS</li>
             </ul>
+            <p class="p-desc">
+              A React application that searches GitHub users and surfaces profile statistics and top
+              repositories through the GitHub REST API.
+            </p>
+            <details class="p-details">
+              <summary>Engineering highlights</summary>
+              <ul class="highlights">
+                <li>async/await API calls with loading and error states for invalid usernames</li>
+                <li>Reusable component architecture with props-based data flow</li>
+                <li>Deployed on Vercel</li>
+              </ul>
+            </details>
+            <div class="p-actions">
+            <a class="btn btn-small" href="https://github.com/vivekboyina/Github_Finder" target="_blank">GitHub<span aria-hidden="true"> ↗</span></a>
+            <a class="btn btn-small btn-ghost" href="https://github-finder-livid-pi.vercel.app/" target="_blank">Live Demo<span aria-hidden="true"> ↗</span></a>
+          </div>
+          </article>
 
-            <!-- Hamburger Button (mobile) -->
-            <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 cursor-pointer z-50" aria-label="Toggle menu">
-                <span class="block w-6 h-0.5 bg-[var(--text-primary)] transition-all duration-300" id="bar1"></span>
-                <span class="block w-6 h-0.5 bg-[var(--text-primary)] transition-all duration-300" id="bar2"></span>
-                <span class="block w-6 h-0.5 bg-[var(--text-primary)] transition-all duration-300" id="bar3"></span>
-            </button>
-        </nav>
-
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-[var(--bg-main)] border-t border-[var(--border-color)] px-6 py-4">
-            <ul class="flex flex-col gap-4 text-sm text-[var(--text-muted)]">
-                <li><a class="hover:text-[var(--text-primary)] block py-1" href="#about" onclick="closeMenu()">About</a></li>
-                <li><a class="hover:text-[var(--text-primary)] block py-1" href="#skills" onclick="closeMenu()">Skills</a></li>
-                <li><a class="hover:text-[var(--text-primary)] block py-1" href="#projects" onclick="closeMenu()">Projects</a></li>
-                <li><a class="hover:text-[var(--text-primary)] block py-1" href="#coding" onclick="closeMenu()">Coding</a></li>
-                <li><a class="px-4 py-2 font-bold text-[var(--text-primary)] bg-[var(--accent-secondary-hover)] rounded-lg inline-block animate-pulse" href="#contact" onclick="closeMenu()">Contact</a></li>
+          <article class="project reveal">
+            <span class="p-index" aria-hidden="true">02</span>
+            <div class="p-head">
+              <div>
+                <h3 class="p-title">Personal Portfolio</h3>
+                <p class="p-cat">Web · Responsive UI</p>
+              </div>
+            </div>
+            <ul class="pills pills-sm">
+              <li class="pill">HTML</li><li class="pill">Tailwind CSS</li><li class="pill">Vercel</li>
             </ul>
+            <p class="p-desc">
+              A responsive personal portfolio presenting technical skills, projects and coding profiles with a
+              clean, content-first interface.
+            </p>
+            <details class="p-details">
+              <summary>Engineering highlights</summary>
+              <ul class="highlights">
+                <li>Responsive layout built with HTML and Tailwind CSS</li>
+                <li>Structured presentation of skills, projects and coding profiles</li>
+                <li>Deployed on Vercel</li>
+              </ul>
+            </details>
+            <div class="p-actions">
+            <a class="btn btn-small" href="https://github.com/vivekboyina/Portfolio" target="_blank">GitHub<span aria-hidden="true"> ↗</span></a>
+            <a class="btn btn-small btn-ghost" href="https://vivekboyinaportfolio.vercel.app/" target="_blank">Live Demo<span aria-hidden="true"> ↗</span></a>
+          </div>
+          </article>
         </div>
-    </header>
 
-    <main class="bg-[var(--bg-surface)]">
+      </div>
+    </div>
+  </section>
 
-        <!-- ABOUT / HERO SECTION -->
-        <section id="about" class="relative overflow-hidden py-16 px-4">
-            <!-- Decorative blobs -->
-            <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-60 h-60 bg-purple-600/20 rounded-full blur-3xl pointer-events-none" style="animation-delay:-3s;"></div>
-
-            <!-- Badges -->
-            <div class="flex flex-wrap justify-center gap-3 mb-8">
-                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-gray-400">
-                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                    Available for new projects
-                </span>
-                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-gray-400">
-                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                    Available for internships
-                </span>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section" aria-labelledby="experience-title">
+    <div class="container">
+      <p class="section-tag">04 — Experience</p>
+      <h2 id="experience-title" class="section-title">Professional experience</h2>
+      <ol class="timeline">
+        <li class="tl-item reveal">
+          <div class="tl-marker" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <h3>Web Developer Intern</h3>
+              <span class="tl-date">Feb 2026 – May 2026</span>
             </div>
+            <p class="tl-org">Abhyaz · Remote, India</p>
+            <ul class="highlights">
+              <li>Redesigned the Abhyaz Services webpage using Zoho Sites, restructuring navigation and layout to improve usability.</li>
+              <li>Organized service content and page sections to improve readability and navigation.</li>
+              <li>Reduced stakeholder review cycles from 4 rounds to 2 through iterative, feedback-driven design revisions.</li>
+            </ul>
+            <p class="tl-stack"><span class="mono">Stack:</span> Zoho Sites · Web Design</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
 
-            <!-- Hero text -->
-            <div class="flex flex-col items-center gap-5 text-center relative z-10">
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl max-w-[15ch] text-[var(--heading-muted)] font-bold leading-tight" style="font-family:var(--font-heading)">
-                    HEY ,  <span class="text-[var(--accent-secondary-hover)]">I am Vivek</span>
-                </h1>
-                <h2 class="text-4xl sm:text-5xl lg:text-6xl max-w-[15ch] text-[var(--heading-muted)] font-bold leading-tight" style="font-family:var(--font-heading)">
-                    An Aspiring <span class="text-[var(--accent-secondary-hover)]">Full Stack Developer</span>
-                </h2>
-                <p class="text-base sm:text-lg lg:text-xl max-w-[60ch] text-[var(--paragraph-text)] leading-relaxed" style="font-family:var(--font-body)">
-                    I am a Full Stack Developer focused on building scalable web applications with intelligent AI integration. I combine strong JavaScript fundamentals, system design thinking, and backend optimization to create high-performance, real-world solutions.
-                </p>
-                <div class="flex justify-center gap-4 pt-2">
-                    <a class="cursor-pointer bg-white/10 border-[var(--btn-border)] rounded-lg px-6 py-3 font-bold text-[var(--text-primary)] hover:animate-pulse hover:underline" href="resume.pdf" download>Download Resume</a>
-                </div>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg px-6 py-3 font-bold text-[var(--text-primary)] hover:animate-pulse hover:underline" href="#projects">View My Work</a>
-                    <a class="cursor-pointer bg-white/10 rounded-lg px-6 py-3 font-bold text-[var(--text-primary)] hover:animate-pulse hover:underline" href="#contact">Get in Touch</a>
-                </div>
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section" aria-labelledby="achievements-title">
+    <div class="container">
+      <p class="section-tag">05 — Problem Solving</p>
+      <h2 id="achievements-title" class="section-title">DSA &amp; competitive achievements</h2>
+      <p class="section-sub">Consistent problem solving is the core of how I train as an engineer.</p>
+
+      <div class="ps-grid">
+        <article class="ps-main reveal">
+          <p class="mono ps-label">LeetCode</p>
+          <p class="ps-num">700+</p>
+          <p class="ps-sub">problems solved</p>
+          <ul class="pills pills-sm topic-pills">
+            <li class="pill">Arrays</li>
+            <li class="pill">Linked Lists</li>
+            <li class="pill">Trees</li>
+            <li class="pill">Graphs</li>
+            <li class="pill">Sliding Window</li>
+            <li class="pill">Dynamic Programming</li>
+          </ul>
+          <a class="btn btn-small" href="https://leetcode.com/u/vivekboyina/" target="_blank">LeetCode Profile<span aria-hidden="true"> ↗</span></a>
+        </article>
+
+        <div class="ps-side">
+          <article class="ach-card reveal">
+            <p class="ach-num">Top 8%</p>
+            <h3>ATF Scholarship Exam 2025</h3>
+            <p>Ranked in the top 8% of the AlgoUniversity Technology Fellowship scholarship examination.</p>
+          </article>
+          <article class="ach-card reveal">
+            <p class="ach-num">5★ C++</p>
+            <h3>HackerRank</h3>
+            <p>5-star rating in C++, earned through problem-solving challenges on the platform.</p>
+          </article>
+          <article class="ach-card reveal">
+            <p class="ach-num">5★ SQL</p>
+            <h3>HackerRank</h3>
+            <p>5-star rating in SQL, covering querying, joins and aggregation challenges.</p>
+          </article>
+          <article class="ach-card reveal ach-link">
+            <h3>Coding profiles</h3>
+            <p>Verify the ratings and solved-problem history directly.</p>
+            <div class="p-actions">
+              <a class="btn btn-small btn-ghost" href="https://www.hackerrank.com/profile/vivekboyina" target="_blank">HackerRank<span aria-hidden="true"> ↗</span></a>
+              <a class="btn btn-small btn-ghost" href="https://github.com/vivekboyina" target="_blank">GitHub<span aria-hidden="true"> ↗</span></a>
             </div>
-        </section>
-
-        <!-- SKILLS SECTION -->
-        <section id="skills" class="py-20 px-4">
-            <div class="text-center mb-10">
-                <h1 class="text-[var(--text-primary)] font-bold text-4xl sm:text-5xl" style="font-family:var(--font-heading)">Skills</h1>
-                <p class="text-[var(--accent-secondary)] text-sm mt-1" style="font-family:var(--font-body)">What I have</p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-
-                <!-- Frontend -->
-                <div class="min-h-[256px] bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition group p-4">
-                    <img width="50" height="50" src="https://img.icons8.com/external-others-pike-picture/50/external-css-front-end-development-others-pike-picture.png" alt="frontend"/>
-                    <h2 class="font-[var(--font-heading)] text-white/40 text-4xl mt-1">Frontend</h2>
-                    <div class="grid grid-cols-2 gap-3 mt-3">
-                        <div class="flex items-center gap-1 text-orange-400 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/pulsar-gradient/48/html-5.png" alt="html"/> HTML</div>
-                        <div class="flex items-center gap-1 text-blue-400 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/pulsar-gradient/48/css3.png" alt="css"/> CSS</div>
-                        <div class="flex items-center gap-1 text-blue-200 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/fluency/48/tailwind_css.png" alt="tailwind"/> Tailwind</div>
-                        <div class="flex items-center gap-1 text-blue-300 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="react"/> React</div>
-                        <div class="flex items-center gap-1 text-yellow-400 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/pulsar-gradient/48/javascript.png" alt="js"/> JavaScript</div>
-                    </div>
-                </div>
-
-                <!-- Backend -->
-                <div class="min-h-[256px] bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] group p-4 hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)]">
-                        <img width="50" height="50" src="https://img.icons8.com/pulsar-color/48/backend-development.png" alt="backend"/>
-                        <h2 class="font-[var(--font-heading)] text-white/40 text-4xl mt-1">Backend</h2>
-                        <div class="grid grid-cols-2 gap-3 mt-3">
-                            <div class="flex items-center gap-1 text-green-300 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/fluency/48/node-js.png" alt="node"/> Node.js</div>
-                            <div class="flex items-center gap-1 text-white/60 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/office/30/express-js.png" alt="express"/> Express.js</div>
-                            <div class="flex items-center gap-1 text-white/60 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/fluency/48/api-settings.png" alt="api"/> Rest API</div>
-                            <div class="flex items-center gap-1 text-yellow-400 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/color/48/authentication.png" alt="auth"/> Auth</div>
-                        </div>
-                </div>
-
-                <!-- Database -->
-                <div class="min-h-[256px] bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] group p-4 hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)]">
-                    <img width="50" height="50" src="https://img.icons8.com/fluency/48/database--v1.png" alt="database"/>
-                    <h2 class="font-[var(--font-heading)] text-white/40 text-4xl mt-1">Database</h2>
-                    <div class="grid grid-cols-2 gap-3 mt-3">
-                        <div class="flex items-center gap-1 text-orange-400 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/color/48/my-sql.png" alt="mysql"/> MySQL</div>
-                        <div class="flex items-center gap-1 text-green-500 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="mongodb"/> MongoDB</div>
-                    </div>
-                </div>
-
-                <!-- DevOps -->
-                <div class="min-h-[256px] bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] group p-4 hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)]">
-                    <img width="50" height="50" src="https://img.icons8.com/pulsar-color/48/cloud-development.png" alt="devops"/>
-                    <h2 class="font-[var(--font-heading)] text-white/40 text-4xl mt-1">DevOps & Cloud</h2>
-                    <div class="grid grid-cols-2 gap-3 mt-3">
-                        <div class="flex items-center gap-1 text-white/80 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/windows/32/FFFFFF/amazon-web-services.png" alt="aws"/> AWS</div>
-                        <div class="flex items-center gap-1 text-blue-400 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/fluency/48/docker.png" alt="docker"/> Docker</div>
-                        <div class="flex items-center gap-1 text-green-400 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/fluency-systems-filled/48/40C057/triangle.png" alt="vercel"/> Vercel</div>
-                        <div class="flex items-center gap-1 text-yellow-400 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/external-those-icons-flat-those-icons/24/external-Linux-logos-and-brands-those-icons-flat-those-icons.png" alt="linux"/> Linux CLI</div>
-                    </div>
-                </div>
-
-                <!-- Tools -->
-                <div class="min-h-[256px] bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] group p-4 hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)]">
-                        <img width="50" height="50" src="https://img.icons8.com/fluency/48/maintenance--v1.png" alt="tools"/>
-                        <h2 class="font-[var(--font-heading)] text-white/40 text-4xl mt-1">Tools</h2>
-                        <div class="grid grid-cols-2 gap-3 mt-3">
-                            <div class="flex items-center gap-1 text-white text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/glyph-neue/64/github.png" alt="github"/> Github</div>
-                            <div class="flex items-center gap-1 text-white text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/windows/32/postman.png" alt="postman"/> Postman</div>
-                            <div class="flex items-center gap-1 text-blue-400 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/color/48/visual-studio-code-2019.png" alt="vscode"/> VS Code</div>
-                        </div>
-                </div>
-
-                <!-- Other -->
-                <div class="min-h-[256px] bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition group p-4">
-                    <img width="50" height="50" src="https://img.icons8.com/color/48/more.png" alt="other"/>
-                    <h2 class="font-[var(--font-heading)] text-white/40 text-4xl mt-1">Other</h2>
-                    <div class="grid grid-cols-2 gap-3 mt-3">
-                        <div class="flex items-center gap-1 text-orange-300 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="java"/> Java</div>
-                        <div class="flex items-center gap-1 text-blue-400 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/fluency/48/c-plus-plus-logo.png" alt="cpp"/> C++</div>
-                        <div class="flex items-center gap-1 text-yellow-200 text-base group-hover:animate-pulse"><img width="25" height="25" src="https://img.icons8.com/fluency/48/python.png" alt="python"/> Python</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="py-20 px-4">
-            <div class="text-center mb-10">
-                <h1 class="text-[var(--text-primary)] font-bold text-4xl sm:text-5xl" style="font-family:var(--font-heading)">Projects</h1>
-                <p class="text-[var(--accent-secondary)] text-sm mt-1" style="font-family:var(--font-body)">What I did</p>
-            </div>
-            <div class="flex flex-col gap-6 max-w-4xl mx-auto">
-
-                <!-- Project 1 -->
-                <div class="flex flex-col sm:flex-row bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] hover:scale-[1.02] hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition overflow-hidden">
-                    <div class="flex items-center justify-center bg-[var(--bg-elevated)] p-6 sm:w-48 shrink-0">
-                        <img width="120" height="120" src="https://img.icons8.com/3d-fluency/94/resume-website.png" alt="portfolio" class="animate-pulse"/>
-                    </div>
-                    <div class="p-5 flex flex-col gap-3">
-                        <h1 class="text-2xl sm:text-3xl font-semibold text-[var(--heading-primary)]" style="font-family:var(--font-heading)">Personal Portfolio Website</h1>
-                        <div class="text-sm flex flex-col gap-1">
-                            <p><span class="text-[var(--heading-secondary)] font-semibold">Frontend:</span> <span class="text-[var(--code-text)]">HTML, CSS, Tailwind CSS, JS</span></p>
-                            <p><span class="text-[var(--heading-secondary)] font-semibold">Form Handling:</span> <span class="text-[var(--code-text)]">Formspree</span></p>
-                            <p class="text-[var(--code-text)] max-w-[50ch]">A responsive full stack developer portfolio built with HTML and Tailwind CSS, highlighting my projects, skills, and clean UI design, with contact functionality powered by Formspree.</p>
-                        </div>
-                        <div class="flex gap-3 flex-wrap">
-                            <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg px-5 py-2 font-bold text-[var(--text-primary)] hover:animate-pulse hover:underline text-sm" href="#home" target="_blank">View</a>
-                            <a class="cursor-pointer bg-white/10 rounded-lg px-5 py-2 font-bold text-[var(--text-primary)] hover:animate-pulse hover:underline text-sm" href="https://github.com/vivekboyina/Portfolio" target="_blank">Github Repo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="flex flex-col sm:flex-row bg-white/10 rounded-lg border-2 border-[var(--accent-secondary)] hover:scale-[1.02] hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition overflow-hidden">
-                    <div class="flex items-center justify-center bg-[var(--bg-elevated)] p-6 sm:w-48 shrink-0">
-                        <img width="120" height="120" src="https://img.icons8.com/external-filled-outline-design-circle/64/external-Digital-Clock-kitchen-and-home-filled-outline-design-circle.png" alt="digital-clock" class="animate-pulse"/>
-                    </div>
-                    <div class="p-5 flex flex-col gap-3">
-                        <h1 class="text-2xl sm:text-3xl font-semibold text-[var(--heading-primary)]" style="font-family:var(--font-heading)">Digital Clock</h1>
-                        <div class="text-sm flex flex-col gap-1">
-                            <p><span class="text-[var(--heading-secondary)] font-semibold">Frontend:</span> <span class="text-[var(--code-text)]">HTML, CSS, JS</span></p>
-                            <p class="text-[var(--code-text)]">No backend used in this project</p>
-                            <p class="text-[var(--code-text)] max-w-[50ch]">A responsive digital clock application that displays real-time hours, minutes, and seconds using JavaScript's Date API and setInterval, showcasing dynamic UI updates and core frontend logic.</p>
-                        </div>
-                        <div class="flex gap-3 flex-wrap">
-                            <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg px-5 py-2 font-bold text-[var(--text-primary)] hover:animate-pulse hover:underline text-sm" href="https://vivekboyina.github.io/Digital-Clock/" target="_blank">View</a>
-                            <a class="cursor-pointer bg-white/10 rounded-lg px-5 py-2 font-bold text-[var(--text-primary)] hover:animate-pulse hover:underline text-sm" href="https://github.com/vivekboyina/Digital-Clock" target="_blank">Github Repo</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- CODING SECTION -->
-        <section id="coding" class="py-20 px-4">
-            <div class="text-center mb-10">
-                <h1 class="text-[var(--text-primary)] font-bold text-4xl sm:text-5xl" style="font-family:var(--font-heading)">Coding</h1>
-                <p class="text-[var(--accent-secondary)] text-sm mt-1" style="font-family:var(--font-body)">What I do</p>
-            </div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 max-w-4xl mx-auto justify-items-center">
-
-                <!-- LeetCode -->
-                <div class="group relative bg-white/10 h-40 w-40 rounded-3xl cursor-pointer border-2 border-[var(--accent-secondary-hover)] hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition">
-                    <div class="flex items-center justify-center h-full animate-pulse">
-                        <img width="80" height="80" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-color-tal-revivo.png" alt="leetcode"/>
-                    </div>
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-black/90 rounded-3xl flex flex-col items-center justify-center gap-3 transition-opacity">
-                        <h2 class="text-[var(--text-secondary)] font-bold text-sm">Leetcode</h2>
-                        <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg h-8 w-16 text-center text-[var(--paragraph-text)] content-center text-sm hover:underline hover:animate-pulse" href="https://leetcode.com/u/vivekboyina/" target="_blank">View</a>
-                    </div>
-                </div>
-
-                <!-- GeeksForGeeks -->
-                <div class="group relative bg-white/10 h-40 w-40 rounded-3xl cursor-pointer border-2 border-[var(--accent-secondary-hover)] hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition">
-                    <div class="flex items-center justify-center h-full animate-pulse">
-                        <img width="80" height="80" src="https://img.icons8.com/color/96/GeeksforGeeks.png" alt="geeksforgeeks"/>
-                    </div>
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-black/90 rounded-3xl flex flex-col items-center justify-center gap-3 transition-opacity">
-                        <h2 class="text-[var(--text-secondary)] font-bold text-sm">GeeksForGeeks</h2>
-                        <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg h-8 w-16 text-center text-[var(--paragraph-text)] content-center text-sm hover:underline hover:animate-pulse" href="https://www.geeksforgeeks.org/profile/vivekboyina" target="_blank">View</a>
-                    </div>
-                </div>
-
-                <!-- CodeChef -->
-                <div class="group relative bg-white/10 h-40 w-40 rounded-3xl cursor-pointer border-2 border-[var(--accent-secondary-hover)] hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition">
-                    <div class="flex items-center justify-center h-full animate-pulse">
-                        <img width="80" height="80" src="https://img.icons8.com/fluency/96/codechef.png" alt="codechef"/>
-                    </div>
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-black/90 rounded-3xl flex flex-col items-center justify-center gap-3 transition-opacity">
-                        <h2 class="text-[var(--text-secondary)] font-bold text-sm">CodeChef</h2>
-                        <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg h-8 w-16 text-center text-[var(--paragraph-text)] content-center text-sm hover:underline hover:animate-pulse" href="https://www.codechef.com/users/vivekboyina" target="_blank">View</a>
-                    </div>
-                </div>
-
-                <!-- CodeForces -->
-                <div class="group relative bg-white/10 h-40 w-40 rounded-3xl cursor-pointer border-2 border-[var(--accent-secondary-hover)] hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition">
-                    <div class="flex items-center justify-center h-full animate-pulse">
-                        <img width="80" height="80" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-codeforces-programming-competitions-and-contests-programming-community-logo-color-tal-revivo.png" alt="codeforces"/>
-                    </div>
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-black/90 rounded-3xl flex flex-col items-center justify-center gap-3 transition-opacity">
-                        <h2 class="text-[var(--text-secondary)] font-bold text-sm">CodeForces</h2>
-                        <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg h-8 w-16 text-center text-[var(--paragraph-text)] content-center text-sm hover:underline hover:animate-pulse" href="https://codeforces.com/profile/vivekboyina" target="_blank">View</a>
-                    </div>
-                </div>
-
-                <!-- HackerRank -->
-                <div class="group relative bg-white/10 h-40 w-40 rounded-3xl cursor-pointer border-2 border-[var(--accent-secondary-hover)] hover:scale-105 hover:shadow-md hover:shadow-[var(--accent-secondary-hover)] transition">
-                    <div class="flex items-center justify-center h-full animate-pulse">
-                        <img width="80" height="80" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-logo-color-tal-revivo.png" alt="hackerrank"/>
-                    </div>
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-black/90 rounded-3xl flex flex-col items-center justify-center gap-3 transition-opacity">
-                        <h2 class="text-[var(--text-secondary)] font-bold text-sm">HackerRank</h2>
-                        <a class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg h-8 w-16 text-center text-[var(--paragraph-text)] content-center text-sm hover:underline hover:animate-pulse" href="https://www.hackerrank.com/profile/vivekboyina77" target="_blank">View</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section id="contact" class="py-20 px-4">
-            <div class="text-center mb-10">
-                <h1 class="text-[var(--text-primary)] font-bold text-4xl sm:text-5xl" style="font-family:var(--font-heading)">Contact</h1>
-                <p class="text-[var(--accent-secondary)] text-sm mt-1" style="font-family:var(--font-body)">Connect with me</p>
-            </div>
-            <div class="max-w-lg mx-auto bg-white/10 border-2 border-[var(--accent-secondary-hover)] rounded-3xl p-6 sm:p-8">
-                <form id="contact-form" class="flex flex-col gap-5">
-                    <label class="text-[var(--heading-muted)] text-lg font-semibold flex flex-col gap-2">
-                        Your Name
-                        <input name="name" type="text" class="bg-[var(--input-bg)] border border-[var(--input-border)] h-10 rounded-md text-[var(--input-text)] px-3 w-full text-sm" placeholder="Enter your name" required>
-                    </label>
-                    <label class="text-[var(--heading-muted)] text-lg font-semibold flex flex-col gap-2">
-                        Your Email
-                        <input type="email" name="email" class="bg-[var(--input-bg)] border border-[var(--input-border)] h-10 rounded-md text-[var(--input-text)] px-3 w-full text-sm" placeholder="Enter your email" required>
-                    </label>
-                    <label class="text-[var(--heading-muted)] text-lg font-semibold flex flex-col gap-2">
-                        Your Message
-                        <textarea name="message" rows="4" class="bg-[var(--input-bg)] border border-[var(--input-border)] rounded-md text-[var(--input-text)] px-3 py-2 w-full text-sm resize-none" placeholder="Enter your message" required></textarea>
-                    </label>
-                    <button type="submit" class="cursor-pointer bg-[var(--accent-secondary-hover)] rounded-lg py-2 px-6 self-center font-bold text-[var(--paragraph-text)] hover:underline hover:animate-pulse w-full sm:w-auto">Send</button>
-                </form>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="bg-black py-10 px-4">
-        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row gap-8 justify-between text-[var(--text-disabled)]">
-            <div>
-                <h2 class="text-lg font-semibold mb-2">Social Media</h2>
-                <div class="flex gap-3 mt-2">
-                    <a href="https://www.linkedin.com/in/vivek-boyina-89148a306/?originalSubdomain=in"><img width="30" height="30" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin" class="hover:scale-125 hover:animate-pulse transition"/></a>
-                    <a href="https://x.com/VivekBoyina07"><img width="28" height="28" src="https://img.icons8.com/ios-filled/50/FFFFFF/twitterx--v2.png" alt="twitter" class="hover:scale-125 hover:animate-pulse transition"/></a>
-                    <a href="https://github.com/vivekboyina"><img width="28" height="28" src="https://img.icons8.com/material-sharp/24/FFFFFF/github.png" alt="github" class="hover:scale-125 hover:animate-pulse transition"/></a>
-                </div>
-            </div>
-            <div>
-                <h2 class="text-lg font-semibold mb-2">Contact</h2>
-                <div class="flex flex-col gap-1 text-sm">
-                    <div class="flex gap-1 items-center">
-                        <span>Call:</span>
-                        <span class="hover:text-[var(--accent-secondary)] transition hover:underline hover:animate-pulse">+91 8106464623</span>
-                    </div>
-                    <div class="flex gap-1 items-center">
-                        <span>Mail:</span>
-                        <a href="mailto:vivekboyina77@gmail.com" class="hover:text-[var(--accent-secondary)] transition hover:underline hover:animate-pulse">vivekboyina77@gmail.com</a>
-                    </div>
-                </div>
-            </div>
+          </article>
         </div>
-        <div class="text-center text-[var(--text-disabled)] mt-8 text-sm">
-            &copy; Copyrights Reserved <a href="#" class="hover:text-[var(--accent-secondary)] transition hover:underline hover:animate-pulse">Vivek Boyina</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section" aria-labelledby="education-title">
+    <div class="container">
+      <p class="section-tag">06 — Education</p>
+      <h2 id="education-title" class="section-title">Education</h2>
+      <div class="edu-grid">
+        <article class="edu-card reveal">
+          <div class="tl-head">
+            <h3>B.Tech — Computer Science Engineering</h3>
+            <span class="tl-date">Aug 2024 – May 2028 (Expected)</span>
+          </div>
+          <p class="tl-org">Aditya University, Surampalem</p>
+          <p class="edu-score"><span class="mono">CGPA</span> 8.64 / 10</p>
+        </article>
+        <article class="edu-card reveal">
+          <div class="tl-head">
+            <h3>Class XII (PCM)</h3>
+            <span class="tl-date">June 2022 – April 2024</span>
+          </div>
+          <p class="tl-org">Sri Chaitanya Junior College, Visakhapatnam</p>
+          <p class="edu-score"><span class="mono">Percentage</span> 96.6%</p>
+        </article>
+      </div>
+      <div class="coursework reveal">
+        <p class="mono ps-label">Relevant coursework</p>
+        <ul class="pills pills-sm">
+          <li class="pill">Data Structures &amp; Algorithms</li>
+          <li class="pill">Object-Oriented Programming (Java)</li>
+          <li class="pill">Operating Systems</li>
+          <li class="pill">Database Management Systems</li>
+          <li class="pill">Computer Networks</li>
+          <li class="pill">Design &amp; Analysis of Algorithms</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact-card reveal">
+        <p class="section-tag">07 — Contact</p>
+        <h2 id="contact-title" class="contact-title">Let's build something worth maintaining.</h2>
+        <p class="contact-sub">
+          I am open to SDE-1 roles and software engineering internships at product-based companies.
+          The fastest way to reach me is email — I reply to every genuine message.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:vivekboyina77@gmail.com">vivekboyina77@gmail.com</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/boyina-veera-venkata-vivek/" target="_blank">LinkedIn<span aria-hidden="true"> ↗</span></a>
+          <a class="btn btn-ghost" href="https://github.com/vivekboyina" target="_blank">GitHub<span aria-hidden="true"> ↗</span></a>
         </div>
-    </footer>
-    
-    <script>
-        // Hamburger menu toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const bar1 = document.getElementById('bar1');
-        const bar2 = document.getElementById('bar2');
-        const bar3 = document.getElementById('bar3');
-        let menuOpen = false;
+        <p class="contact-meta mono">Phone: 8106464623 · Surampalem, India</p>
+      </div>
+    </div>
+  </section>
+</main>
 
-        menuBtn.addEventListener('click', () => {
-            menuOpen = !menuOpen;
-            mobileMenu.classList.toggle('hidden', !menuOpen);
-            // Animate hamburger to X
-            if (menuOpen) {
-                bar1.style.transform = 'translateY(8px) rotate(45deg)';
-                bar2.style.opacity = '0';
-                bar3.style.transform = 'translateY(-8px) rotate(-45deg)';
-            } else {
-                bar1.style.transform = '';
-                bar2.style.opacity = '';
-                bar3.style.transform = '';
-            }
-        });
-
-        function closeMenu() {
-            menuOpen = false;
-            mobileMenu.classList.add('hidden');
-            bar1.style.transform = '';
-            bar2.style.opacity = '';
-            bar3.style.transform = '';
-        }
-
-        // Contact form
-        const form = document.getElementById("contact-form");
-        form.addEventListener("submit", function(e) {
-            e.preventDefault();
-            const data = new FormData(form);
-            fetch("https://formspree.io/f/xpqjybkp", {
-                method: "POST",
-                body: data,
-                headers: { 'Accept': 'application/json' }
-            })
-            .then(response => {
-                if (response.ok) {
-                    form.reset();
-                    alert("Message sent successfully!");
-                } else {
-                    alert("Oops! Something went wrong. Please try again.");
-                }
-            })
-            .catch(() => alert("Network error. Please try again."));
-        });
-    </script>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="footer-name">Boyina Veera Venkata Vivek</p>
+      <p class="footer-role">Computer Science Engineer</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="https://github.com/vivekboyina" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/boyina-veera-venkata-vivek/" target="_blank">LinkedIn</a>
+      <a href="mailto:vivekboyina77@gmail.com">Email</a>
+    </nav>
+    <div class="footer-meta">
+      <p>© 2026 Boyina Veera Venkata Vivek</p>
+      <p class="mono">Built with HTML &amp; CSS.</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
