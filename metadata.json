@@ -1,0 +1,6 @@
+{
+  "name": "Vivek Hero Typography Animation",
+  "description": "Cinematic full-screen hero animation of VIVEK in bold geometric black and white typography.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

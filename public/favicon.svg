@@ -1,6 +1,64 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="32" height="32" rx="8" fill="#111114"/>
-  <path d="M13 10L7 16L13 22" stroke="#22D3EE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M19 10L25 16L19 22" stroke="#6366F1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M17 8L15 24" stroke="#F5F5F7" stroke-width="2" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="vb-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Glowing Border Gradient -->
+    <linearGradient id="vb-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Left Facet Gradient -->
+    <linearGradient id="vb-arm-left" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="60%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+
+    <!-- Right Facet Gradient -->
+    <linearGradient id="vb-arm-right" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+
+    <!-- Radial Glow Filter -->
+    <radialGradient id="vb-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#818cf8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Squircle Base with Glowing Border -->
+  <rect x="2.5" y="2.5" width="59" height="59" rx="16" fill="url(#vb-bg)" />
+  <rect x="2.5" y="2.5" width="59" height="59" rx="16" stroke="url(#vb-border)" stroke-width="1.75" stroke-opacity="0.9" fill="none" />
+
+  <!-- Ambient Glow Behind Monogram -->
+  <circle cx="32" cy="34" r="22" fill="url(#vb-glow)" />
+
+  <!-- Faceted Geometric "V" Monogram -->
+  <!-- Left Chiseled Wing -->
+  <polygon
+    points="14,18 23.5,18 32,37.5 32,49.7"
+    fill="url(#vb-arm-left)"
+  />
+
+  <!-- Right Chiseled Wing -->
+  <polygon
+    points="50,18 40.5,18 32,37.5 32,49.7"
+    fill="url(#vb-arm-right)"
+  />
+
+  <!-- Subtle Center Highlight Line -->
+  <line x1="32" y1="37.5" x2="32" y2="49.7" stroke="#ffffff" stroke-width="0.75" stroke-opacity="0.4" />
+
+  <!-- Glowing Cyan Tech Pulse Dot -->
+  <circle cx="49" cy="14" r="3.2" fill="#38bdf8" />
+  <circle cx="49" cy="14" r="5" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" fill="none" />
 </svg>
